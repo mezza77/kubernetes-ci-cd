@@ -18,7 +18,7 @@ node {
     
     stage "Push"
 
-        sh "docker push ${imageName}"
+        sh "gcloud docker -- push ${imageName}"
 
     stage "Deploy"
 
